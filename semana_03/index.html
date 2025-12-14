@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Mi Proyecto Web - Semana 3</h1>
+      <p><strong>Desarrollado por:</strong> Emilio</p>
+    </header>
+
+    <nav>
+      <ul>
+        <li>
+          <a href="#home">Inicio</a>
+        </li>
+        <li>
+          <a href="#content">Contenido</a>
+        </li>
+        <li>
+          <a href="#contact">Contacto</a>
+        </li>
+      </ul>
+    </nav>
+
+    <main>
+      <section id="home">
+        <h2>Introducción</h2>
+        <article>
+          <h3>Qué es HTML?</h3>
+          <p>
+            HTML (HyperText Markup Language) es el lenguaje de marcado estándar
+            que se usa para crear páginas web. Fue creado por Tim Berners-Lee en
+            1989 y se convirtió en una especificación oficial de la World Wide
+            Web Consortium (W3C) en 1991.
+          </p>
+        </article>
+      </section>
+      <section id="content">
+        <h2>Contenido Multimedia</h2>
+        <h3>Imagen</h3>
+        <img
+          src="assets/img/imagen1.png"
+          width="200"
+          height="200"
+          alt="Imagen 1 de ejemplo"
+        />
+        <h3>Video</h3>
+        <video controls width="400">
+          <source src="assets/video/video1.mp4" type="video/mp4" />
+          Tu navegador no soporta el elemento video.
+        </video>
+      </section>
+
+      <section>
+        <h2>Listas</h2>
+        <h3>Lista Ordenada</h3>
+        <ol>
+          <li>HTML5</li>
+          <li>CSS3</li>
+          <li>JS</li>
+        </ol>
+        <h3>Lista No Ordenada</h3>
+        <ul>
+          <li>Visual Studio Code</li>
+          <li>GitHub</li>
+          <li>Git</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Table de Ejemplo</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Lenguaje</th>
+              <th>Uso</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>HTML</td>
+              <td>Estructura</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>CSS3</td>
+              <td>Diseño</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>JS</td>
+              <td>Interactividad</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section id="contact">
+        <h2>Formulario de Contacto</h2>
+        <form action="">
+          <p>
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" />
+          </p>
+          <p>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" />
+          </p>
+          <p>
+            <label for="message">Mensaje:</label>
+            <textarea id="message" name="message" rows="4" cols="50"></textarea>
+          </p>
+          <button type="submit">Enviar</button>
+        </form>
+      </section>
+
+      <section>
+        <h2>Enlace Externo</h2>
+        <a href="https://github.com/emiliouea"> GitHub Emilio Senguana </a>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2025 Emilio Senguana - Proyecto Semana 3</p>
+    </footer>
+  </body>
+</html>
