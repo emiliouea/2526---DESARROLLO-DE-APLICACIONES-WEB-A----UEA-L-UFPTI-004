@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lista Dinámica de Productos - Semana 7</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Lista Dinámica de Productos</h1>
+    </header>
+
+    <main class="container">
+      <div class="left-panel">
+        <section>
+          <h2>Agregar Nuevo Producto</h2>
+          <form class="form-container">
+            <input
+              type="text"
+              id="productName"
+              placeholder="Nombre del producto"
+              required
+            />
+            <input
+              type="number"
+              id="productPrice"
+              placeholder="Precio"
+              step="0.01"
+              required
+            />
+            <textarea
+              id="productDescription"
+              placeholder="Descripción breve"
+              rows="3"
+              required
+            ></textarea>
+            <button type="button" id="addProductBtn">Agregar Producto</button>
+          </form>
+        </section>
+      </div>
+
+      <div class="right-panel">
+        <section>
+          <h2>Productos Disponibles</h2>
+          <ul id="productsList" class="products-list">
+            <!-- Los productos se generarán dinámicamente aquí -->
+          </ul>
+        </section>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
